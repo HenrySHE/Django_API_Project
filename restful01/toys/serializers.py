@@ -1,12 +1,18 @@
-"""
-Book: Django RESTful Web Services
-Author: Gaston C. Hillar - Twitter.com/gastonhillar
-Publisher: Packt Publishing Ltd. - http://www.packtpub.com
-"""
 from rest_framework import serializers
 from toys.models import Toy
 
+# Update the Toy Seralizer, declear the model called Toy, and declear the fields, including id, name, desc, release date and etc.
+class ToySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Toy
+        fields = ('id',
+            'name',
+            'description',
+            'release_date',
+            'toy_category',
+            'was_included_in_home')
 
+'''
 class ToySerializer(serializers.Serializer):
     pk = serializers.IntegerField(read_only=True)
     name = serializers.CharField(max_length=150)
@@ -26,3 +32,4 @@ class ToySerializer(serializers.Serializer):
         instance.was_included_in_home = validated_data.get('was_included_in_home', instance.was_included_in_home)
         instance.save()
         return instance
+'''
