@@ -5,6 +5,7 @@ from toys.serializers import ToySerializer
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
+# 使用api_view之后,就有了web的UI,请求之后是返回一个比较好看的webpage.
 
 @api_view(['GET', 'POST'])
 def toy_list(request):
