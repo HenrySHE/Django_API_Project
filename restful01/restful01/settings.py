@@ -40,7 +40,9 @@ INSTALLED_APPS = [
     # Django REST framework
     'rest_framework',
     # Tyoys application
-    'toys.apps.ToysConfig',
+    #'toys.apps.ToysConfig',
+    # Drones application
+    'drones.apps.DronesConfig',
 ]
 
 MIDDLEWARE = [
