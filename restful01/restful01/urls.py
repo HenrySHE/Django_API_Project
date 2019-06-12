@@ -17,6 +17,6 @@ from django.conf.urls import url,include
 from django.contrib import admin
 
 urlpatterns = [
-    #include the toys folder, urls.py file
-    url(r'^', include('toys.urls')),
+    # include the toys folder, urls.py file
+    # url(r'^', include('toys.urls')),
 ]
