@@ -19,4 +19,6 @@ from django.contrib import admin
 urlpatterns = [
     # include the toys folder, urls.py file
     # url(r'^', include('toys.urls')),
+    # New urlpatterns
+    url(r'^', include('drones.urls')),
 ]
